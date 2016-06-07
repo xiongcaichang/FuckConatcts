@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "FuckContacts.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    FuckContactsManager *manager = [[FuckContactsManager alloc   ]init];
+    
+    
+     FuckContactModel *model =  [manager contactList].lastObject;
+    
+    
+    NSLog(@">>>>>%@,%@",model.firstName,model.lastName);
+    [model.phoneNumbers enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+        NSLog(@">>>>key:%@   , value :%@\n",key,obj);
+        
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -13,6 +13,9 @@
 		0982EF101D069ADC004A38D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0982EF0E1D069ADC004A38D6 /* Main.storyboard */; };
 		0982EF121D069ADC004A38D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0982EF111D069ADC004A38D6 /* Assets.xcassets */; };
 		0982EF151D069ADC004A38D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0982EF131D069ADC004A38D6 /* LaunchScreen.storyboard */; };
+		0982EF221D069AF8004A38D6 /* FuckContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0982EF1E1D069AF8004A38D6 /* FuckContactModel.m */; };
+		0982EF231D069AF8004A38D6 /* FuckContactsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0982EF211D069AF8004A38D6 /* FuckContactsManager.m */; };
+		0982EF261D06ACC7004A38D6 /* PhoneNumbers.m in Sources */ = {isa = PBXBuildFile; fileRef = 0982EF251D06ACC7004A38D6 /* PhoneNumbers.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,13 @@
 		0982EF111D069ADC004A38D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0982EF141D069ADC004A38D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0982EF161D069ADC004A38D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0982EF1D1D069AF8004A38D6 /* FuckContactModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuckContactModel.h; sourceTree = "<group>"; };
+		0982EF1E1D069AF8004A38D6 /* FuckContactModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuckContactModel.m; sourceTree = "<group>"; };
+		0982EF1F1D069AF8004A38D6 /* FuckContacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuckContacts.h; sourceTree = "<group>"; };
+		0982EF201D069AF8004A38D6 /* FuckContactsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuckContactsManager.h; sourceTree = "<group>"; };
+		0982EF211D069AF8004A38D6 /* FuckContactsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuckContactsManager.m; sourceTree = "<group>"; };
+		0982EF241D06ACC7004A38D6 /* PhoneNumbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneNumbers.h; sourceTree = "<group>"; };
+		0982EF251D06ACC7004A38D6 /* PhoneNumbers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneNumbers.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 		0982EF041D069ADB004A38D6 /* FuckConatctsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0982EF1C1D069AF8004A38D6 /* Lib */,
 				0982EF081D069ADC004A38D6 /* AppDelegate.h */,
 				0982EF091D069ADC004A38D6 /* AppDelegate.m */,
 				0982EF0B1D069ADC004A38D6 /* ViewController.h */,
@@ -77,6 +88,20 @@
 				0982EF061D069ADC004A38D6 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0982EF1C1D069AF8004A38D6 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				0982EF1D1D069AF8004A38D6 /* FuckContactModel.h */,
+				0982EF1E1D069AF8004A38D6 /* FuckContactModel.m */,
+				0982EF1F1D069AF8004A38D6 /* FuckContacts.h */,
+				0982EF201D069AF8004A38D6 /* FuckContactsManager.h */,
+				0982EF211D069AF8004A38D6 /* FuckContactsManager.m */,
+				0982EF241D06ACC7004A38D6 /* PhoneNumbers.h */,
+				0982EF251D06ACC7004A38D6 /* PhoneNumbers.m */,
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +175,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0982EF0D1D069ADC004A38D6 /* ViewController.m in Sources */,
+				0982EF261D06ACC7004A38D6 /* PhoneNumbers.m in Sources */,
 				0982EF0A1D069ADC004A38D6 /* AppDelegate.m in Sources */,
 				0982EF071D069ADC004A38D6 /* main.m in Sources */,
+				0982EF221D069AF8004A38D6 /* FuckContactModel.m in Sources */,
+				0982EF231D069AF8004A38D6 /* FuckContactsManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +292,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FuckConatctsDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiongcaichang.FuckConatctsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -275,6 +304,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FuckConatctsDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiongcaichang.FuckConatctsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
